@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 3em;}
+h3{ font-size: 2em;}
+p{ font-size: 1em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 10px black;
+    color: white;
+    background-color: blue;
+}
+
+button:hover{
+    background-color:blue
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:deeppink }
+
+header{
+    background-color:aqua
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 40px 50px;
+   }
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+color: blue;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./imagen/3023.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: blanchedalmond;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#Productos .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+.Categorias{
+    padding: 1rem 1.4rem;
+    text-align: center;
+}
+.categorias_contenedor{
+    display: inline;
+}
+
+footer{
+    background-color:aqua
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color:blue
+}
+
+footer .container{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 15px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #Productos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #Productos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Productos h2{
+        margin-top: 0px;
+    }
+
+    #Productos .img-container{
+        background-image: url("./imagen/cuadrante.jpg");
+        background-size:cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    .Categorias .CategoriaIndv{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
+    }
+
+    .Categorias p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .Categorias h2{
+        font-size: 4em;
+    }
+
+    .Categorias h3{
+        margin-top: 0;
+    }
+
+    .carta{
+        padding: 50px;
+        background-size: 100% ;
+        background-repeat: no-repeat;
+        background-position-y: 1;
+        background-color:brown;
+        box-shadow: 2px 2px 7px red;
+        margin: auto;
+    }
+
+    
+     }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
